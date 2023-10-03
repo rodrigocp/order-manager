@@ -23,6 +23,7 @@ Not all features were implemented. The following ones are marked as TODO:
 - Send E-Mails
 - File Logger
 - Swagger Docs
+- Unit Tests
 
 # Known Issues
 - TODO
