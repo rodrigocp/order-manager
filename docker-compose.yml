@@ -1,0 +1,39 @@
+version: '1'
+
+services:
+  postgres:
+    container_name: postgres
+    restart: unless-stopped
+    image: postgres
+    networks: [public]
+    ports: ['5432:5432']
+    environment:
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./sql/createdb.sql:/docker-entrypoint-initdb.d/createdb.sql
+
+  application:
+    container_name: orders-service
+    restart: unless-stopped
+    build: ./
+    depends_on: [postgres]
+    ports: ['8080:8080']
+    networks: [public]
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/ordersdb
+
+volumes:
+  postgres-data:
+
+networks:
+  public:
+    name: net-public
+    driver: bridge
+    internal: false
+
+  internal:
+    name: net-internal
+    driver: bridge
+    internal: true

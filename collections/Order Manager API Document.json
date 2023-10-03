@@ -1,0 +1,632 @@
+{
+  "info": {
+    "name": "Untitled API Document",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET All Orders",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "localhost:8080/orders/",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhost:8080/orders/"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [],
+        "body": null,
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    },
+    {
+      "name": "GET One Order",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "localhost:8080/orders/1",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhost:8080/orders/1"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [],
+        "body": null,
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    },
+    {
+      "name": "POST One Order",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "localhost:8080/orders/",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhost:8080/orders/"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "disabled": false,
+            "description": null
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "disabled": false,
+          "raw": "{\"item_id\":1,\"user_id\":1,\"quantity\":90}"
+        },
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH One Order",
+      "request": {
+        "method": "PATCH",
+        "url": {
+          "raw": "localhost:8080/orders/",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhost:8080/orders/"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "disabled": false,
+            "description": null
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "disabled": false,
+          "raw": "{\"id\":4,\"item_id\":1,\"quantity\":40,\"user_id\":1}"
+        },
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE One Order",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "localhost:8080/orders/",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhost:8080/orders/"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "disabled": false,
+          "raw": ""
+        },
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    },
+    {
+      "name": "GET All Movements",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "localhost:8080/stock-movements/",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhost:8080/stock-movements/"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [],
+        "body": null,
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    },
+    {
+      "name": "GET One Movement",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "localhost:8080/stock-movements/1",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhost:8080/stock-movements/1"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [],
+        "body": null,
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    },
+    {
+      "name": "POST One Movement",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "localhost:8080/stock-movements/",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhost:8080/stock-movements/"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "disabled": false,
+            "description": null
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "disabled": false,
+          "raw": "{\"item_id\":1,\"quantity\":120}"
+        },
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH One Movement",
+      "request": {
+        "method": "PATCH",
+        "url": {
+          "raw": "localhost:8080/stock-movements/",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhost:8080/stock-movements/"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "disabled": false,
+            "description": null
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "disabled": false,
+          "raw": "{\"id\":1,\"item_id\":1,\"quantity\":20}"
+        },
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE One Movement",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "localhost:8080/stock-movements/1",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhost:8080/stock-movements/1"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "disabled": false,
+          "raw": ""
+        },
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    },
+    {
+      "name": "GET All Items",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "localhost:8080/items/",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhost:8080/items/"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [],
+        "body": null,
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    },
+    {
+      "name": "GET One Item",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "localhost:8080/items/1",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhost:8080/items/1"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [],
+        "body": null,
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    },
+    {
+      "name": "POST One Item",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "localhost:8080/items/",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhost:8080/items/"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "disabled": false,
+            "description": null
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "disabled": false,
+          "raw": "{\"name\":\"Item A\"}"
+        },
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH One Item",
+      "request": {
+        "method": "PATCH",
+        "url": {
+          "raw": "localhost:8080/items/",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhost:8080/items/"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "disabled": false,
+            "description": null
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "disabled": false,
+          "raw": "{\"id\":1,\"name\":\"Item B\"}"
+        },
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE One Item",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "localhost:8080/items/3",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhost:8080/items/3"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "disabled": false,
+          "raw": ""
+        },
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    },
+    {
+      "name": "GET All Users",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "localhost:8080/users/",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhost:8080/users/"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [],
+        "body": null,
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    },
+    {
+      "name": "GET One User",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "localhostlocalhost:8080/users/3",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhostlocalhost:8080/users/3"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [],
+        "body": null,
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    },
+    {
+      "name": "POST One User",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "localhost:8080/users/",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhost:8080/users/"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "disabled": false,
+            "description": null
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "disabled": false,
+          "raw": "{\"name\":\"Fulano De Tal\",\"email\":\"fulano@email.com\"}"
+        },
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH One User",
+      "request": {
+        "method": "PATCH",
+        "url": {
+          "raw": "localhost:8080/users/",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhost:8080/users/"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "disabled": false,
+            "description": null
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "disabled": false,
+          "raw": "{\"email\":\"fulanoDeTal@email.com\",\"id\":1,\"name\":\"Fulano De Tal\"}"
+        },
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE One User",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "localhost:8080/users/3",
+          "query": null,
+          "protocol": null,
+          "host": [
+            "localhost:8080/users/3"
+          ],
+          "port": null,
+          "path": null
+        },
+        "description": "",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "disabled": false,
+          "raw": ""
+        },
+        "auth": null
+      },
+      "protocolProfileBehavior": {
+        "followRedirects": false,
+        "followOriginalHttpMethod": false,
+        "followAuthorizationHeader": false
+      },
+      "response": []
+    }
+  ]
+}
